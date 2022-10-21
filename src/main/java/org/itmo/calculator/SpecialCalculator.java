@@ -1,22 +1,28 @@
 package org.itmo.calculator;
 
-public final class SpecialCalculator {
-    public SpecialCalculator(int memoryCellsSize) {
-        // напишите здесь код
+import org.itmo.calculator.app.CalculatorApp;
+
+public final class SpecialCalculator
+{
+
+    private CalculatorApp app;
+    public SpecialCalculator(int memoryCellsSize)
+    {
+        app = new CalculatorApp(memoryCellsSize);
     }
 
-    public String calculate(String expression) {
-        // напишите здесь код
-        return ""; // не забудьте заменить "" на результат операции
+    public String calculate(String expression)
+    {
+        return app.calculate(expression);
     }
 
-    public String putLastResultInMemory(int memoryCellIndex) {
-        // напишите здесь код
-        return ""; // не забудьте заменить "" на результат операции
+    public String putLastResultInMemory(int memoryCellIndex)
+    {
+        return app.putLastResultInMemory(memoryCellIndex);
     }
 
-    public String resetMemory(int memoryCellIndex) {
-        // напишите здесь код
-        return ""; // не забудьте заменить "" на результат операции
+    public String resetMemory(int memoryCellIndex)
+    {
+        return app.resetMemory(memoryCellIndex);
     }
 }
