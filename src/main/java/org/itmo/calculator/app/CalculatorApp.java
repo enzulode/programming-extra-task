@@ -1,9 +1,9 @@
 package org.itmo.calculator.app;
 
 import org.itmo.calculator.operations.*;
+import org.itmo.calculator.util.SuperMap;
 
 import java.util.Arrays;
-import java.util.HashMap;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -15,8 +15,7 @@ public class CalculatorApp
 	private long lastResult;
 	private String operationProceeded;
 	private long[] memory;
-	private final HashMap<String, Operation> operationsMap = new HashMap<>();
-
+	private final SuperMap operationsMap = new SuperMap();
 
 	public CalculatorApp(int memoryCellsSize)
 	{
